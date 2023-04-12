@@ -32,7 +32,7 @@
                     <h1>{{menuItem.title}}</h1>
                     <p>{{menuItem.description}}</p>
                 </a> 
-                <p-panel styleClass="menuGroup" *ngIf="menuItem.group" [joyrideStep]="menuItem.joyrideStep" [text]="menuItem.text" stepPosition="right" [toggleable]="true" [collapsed]="true" expandIcon="fa-chevron-down" collapseIcon="fa-chevron-up">
+                <p-panel styleClass="menuGroup" *ngIf="menuItem.group" [joyrideStep]="menuItem.joyrideStep" [text]="menuItem.text" stepPosition="right" [toggleable]="true" [collapsed]="false" expandIcon="fa-chevron-down" collapseIcon="fa-chevron-up">
                     <p-header>
                         <h1>{{menuItem.title}}</h1>
                         <p>{{menuItem.description}}</p>
