@@ -1,0 +1,20 @@
+{
+    "/resource-monitor" : {
+        "target": "http://192.168.56.107:8190",
+        "secure": false,
+        "logLevel" : "debug",
+        "changeOrigin" : true,
+        "pathRewrite" : {
+            "^/resource-monitor/" : "/v1/"
+        }
+    },
+    "/alertmanager": {
+        "target": "http://192.168.56.159:9093",
+        "secure": false,
+        "logLevel" : "debug",
+        "changeOrigin" : true,
+        "pathRewrite" : {
+            "^/alertmanager/" : "/api/v1/"
+        }
+    }
+}
